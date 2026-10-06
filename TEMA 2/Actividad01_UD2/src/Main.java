@@ -64,17 +64,83 @@ public class Main {
 
 
     /*Ejercicio 6: Escribe un programa que dado el precio de un artículo y el precio de venta real nos muestre el porcentaje de descuento realizado. */
-        System.out.println("EJERCICIO  6");
+        System.out.println("EJERCICIO 6");
+        scanner = new Scanner(System.in);
+        System.out.println("Ingrese el precio de venta real");
+        double precioReal = scanner.nextDouble();
+        System.out.println("Ingrese el precio de venta del articulo");
+        double precioVenta = scanner.nextDouble();
 
-        System.out.println("Introduzca el precio real del artículo:");
-            double precioArticulo = scanner.nextDouble();
+        double descuento = ((precioReal - precioVenta) / precioReal) * 100.0;
+        System.out.println("El descuento aplicado es: " + descuento + "%.");
 
-        System.out.println("Introduzca el precio de venta final:");
-            double precioVenta = scanner.nextDouble();
 
-        double desccuento = (precioArticulo - precioVenta) / precioArticulo;
+/*
+        Ejercicio 7: Escribe un programa que lea un valor correspondiente a una distancia en millas marinas
+        y escriba la distancia en metros. Sabiendo que una milla marina equivale a 1.852 metros.
+        */
+        System.out.println("EJERCICIO 7");
+        scanner = new Scanner(System.in);
+        System.out.println("Ingrese la distancia en millas marinas");
+        double distanciaMillas = scanner.nextDouble();
+        double distanciaMetros = distanciaMillas * 1.852;
+        System.out.println("La distancia en metros es: " + distanciaMetros + "m.");
 
-        double porcentajeDescuento;
+        /*
+        Ejercicio 8: Escribe un programa que lee dos números y los visualiza en orden ascendente.
+        */
+        System.out.println("EJERCICIO 8");
+        scanner = new Scanner(System.in);
+        System.out.println("Introduce el primer numero");
+        double num3 = scanner.nextDouble();
+        System.out.println("Introduce el segundo numero");
+        double num4 = scanner.nextDouble();
+
+        System.out.println("Los numeros en orden ascendente son: " + Math.min(num3, num4) + ", "
+                + Math.max(num3, num4));
+
+        /*
+        Ejercicio 9: Escribe un programa que lee dos números
+        y nos dice cuál es el mayor o si son iguales.
+        */
+        System.out.println("EJERCICIO 9");
+        scanner = new Scanner(System.in);
+        System.out.println("Introduce el primer numero");
+        double num5 = scanner.nextDouble();
+        System.out.println("Introduce el segundo numero");
+        double num6 = scanner.nextDouble();
+
+        System.out.println("Los numeros son iguales: " + (num5 == num6));
+        System.out.println("El primer numero es mayor que el segundo: " + (num5 > num6));
+
+        /*
+        Ejercicio 10: Escribe un programa que lea tres números distintos y nos diga cuál es el mayor
+        */
+        System.out.println("EJERCICIO 10");
+        scanner = new Scanner(System.in);
+        System.out.println("Introduce el primer numero");
+        double num7 = scanner.nextDouble();
+        System.out.println("Introduce el segundo numero");
+        double num8 = scanner.nextDouble();
+        System.out.println("Introduce el tercer numero");
+        double num9 = scanner.nextDouble();
+
+        System.out.println("El numero mayor es: " + Math.max(num9, Math.max(num7, num8)));
+
+        /*
+        Ejercicio 13: Escribe un programa que lee un número y me dice si es positivo
+         o negativo consideraremos el cero como positivo.
+        */
+        System.out.println("EJERCICIO 10");
+        scanner = new Scanner(System.in);
+        System.out.println("Introduce el primer numero");
+        double numero = scanner.nextDouble();
+        System.out.println("El numero es positivo :" +(numero >= 0));
+        System.out.println("El numero es negativo :" +(numero < 0));
+
+
+
+
 
 
     }
