@@ -38,16 +38,16 @@ public class Menu {
                     IO.println("La suma es: "+ (num1 + num2));
                 }
                 case "2" ->{
-                    IO.println("La suma es: "+ (num1 - num2));
+                    IO.println("La resta es: "+ (num1 - num2));
                 }
                 case "3" ->{
-                    IO.println("La multiplicacion es: "+ (num1 * num2));
+                    IO.println("La multiplicación es: "+ (num1 * num2));
                 }
                 case "4" ->{
                     if(num2 !=0){
                         IO.println("La division es: "+ (num1 / num2));
                     }else{
-                        IO.println("El segundo numero es cero y es una indeterminacion");
+                        IO.println("El segundo numero es cero y es una indeterminación");
                     }
 
                 }
